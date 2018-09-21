@@ -49,6 +49,7 @@ program
 	.option('-s, --save', 'save key so you can omit it for subsequent commands')
 	.option('--id <id>', 'id of device')
 	.option('--key [key]', 'key of device')
+	.option('--dps [dps]', 'DPS index to get', 1)
 	.action(options => {
 		control.get(conf, options);
 	});
