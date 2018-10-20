@@ -7,7 +7,7 @@ const Configstore = require('configstore');
 
 // Import local files
 const link = require('./lib/link');
-const linkWizard = require('./lib/link-wizard.js');
+const listApp = require('./lib/listApp.js');
 const control = require('./lib/control');
 const pkg = require('./package.json');
 
@@ -18,10 +18,10 @@ require('please-upgrade-node')(pkg);
 const conf = new Configstore(pkg.name);
 updateNotifier({pkg}).notify();
 
-// Link a device
+// Link a device (old method)
 program
 	.command('link')
-	.description('link a new device')
+	.description('link a new device (for advanced users only)')
 	.option('--ssid <ssid>', 'name of WiFi to connect to')
 	.option('--password <password>', 'password of WiFi')
 	.option('--api-key [apiKey]', 'your tuya.com API key')
@@ -31,15 +31,6 @@ program
 	.option('-n, --num [num]', 'number of devices to link', 1)
 	.action(options => {
 		link(conf, options);
-	});
-
-// Interactively link a device
-program
-	.command('link-wizard')
-	.description('interactively link a new device (recommended for new users)')
-	.option('--overwrite', 'show prompts for API credentials, even if some are already saved')
-	.action(options => {
-		linkWizard(conf, options);
 	});
 
 // Get a property
@@ -67,13 +58,24 @@ program
 		control.set(conf, options);
 	});
 
-// List all saved devices
+// List all locally saved devices
 program
 	.command('list')
-	.description('list all saved devices and API keys')
+	.description('list all locally saved devices')
 	.action(() => {
 		console.log(conf.all);
 	});
+
+// MITM Tuya App and list devices
+program
+  .command('list-app')
+  .description('list devices from Tuya Smart app (recommended for new users)')
+  .option('-p, --port [port]', 'port to use for proxy', 8001)
+  .option('-q, --omitQR', 'don\'t show the QR code for certificate setup', false)
+  .option('-s, --save', 'save device parameters for subsequent commands')
+  .action(options => {
+    listApp(conf, options);
+  });
 
 // Get help
 program
