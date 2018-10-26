@@ -33,7 +33,6 @@
     "commander": "^2.15.1",
     "configstore": "^3.1.2",
     "debug": "^3.1.0",
-    "dnode": "^1.2.2",
     "inquirer": "^6.0.0",
     "ora": "^3.0.0",
     "please-upgrade-node": "^3.1.1",
