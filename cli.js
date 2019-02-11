@@ -41,7 +41,8 @@ program
 	.option('--ip <ip_addr>', 'ip address of device')
 	.option('--id <id>', 'id of device')
 	.option('--key [key]', 'key of device')
-	.option('--dps [dps]', 'DPS index to get', 1)
+	.option('--dps [dps]', 'property index to get', 1)
+	.option('-a, --all', 'get all properties of a device', false)
 	.action(options => {
 		control.get(conf, options);
 	});
