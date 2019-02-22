@@ -8,6 +8,7 @@ const Configstore = require('configstore');
 // Import local files
 const link = require('./lib/link');
 const listApp = require('./lib/list-app.js');
+const mock = require('./lib/mock.js');
 const control = require('./lib/control');
 const pkg = require('./package.json');
 
@@ -77,6 +78,17 @@ program
 	.option('-q, --omitQR', 'don\'t show the QR code for certificate setup', false)
 	.action(options => {
 		listApp(conf, options);
+	});
+
+program
+	.command('mock')
+	.description('mock a Tuya device for local testing')
+	.option('-i, --id [id]', 'ID to use for mock device')
+	.option('-k, --key [key]', 'key to use for mock device')
+	.option('-s, --state [state]', 'inital state to use for device', JSON.stringify({1: true, 2: false}))
+	.option('-u, --disableUDP', 'disable the UDP broadcast')
+	.action(options => {
+		mock(conf, options);
 	});
 
 // Get help

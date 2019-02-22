@@ -11,18 +11,21 @@ A CLI for Tuya devices.
 ```shell
 > tuya-cli help
 
-Usage: tuya-cli [options] [command]
+  Usage: cli [options] [command]
 
-Options:
-  -h, --help          output usage information
+  Options:
 
-Commands:
-  link [options]      link a new device (for advanced users only)
-  get [options]       get a property on a device
-  set [options]       set a property on a device
-  list                list all locally saved devices
-  list-app [options]  list devices from Tuya Smart app (recommended for new users)
-  help                output usage information
+    -h, --help          output usage information
+
+  Commands:
+
+    link [options]      link a new device (for advanced users only)
+    get [options]       get a property on a device
+    set [options]       set a property on a device
+    list                list all locally saved devices
+    list-app [options]  list devices from Tuya Smart app (recommended for new users)
+    mock [options]      mock a Tuya device for local testing
+    help                output usage information
 
 ```
 
