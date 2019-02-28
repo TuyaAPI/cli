@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/TuyaAPI/cli#readme",
   "dependencies": {
-    "@tuyapi/cloud": "^0.2.2",
+    "@tuyapi/cloud": "^0.3.2",
     "@tuyapi/link": "^0.2.0",
     "@tuyapi/stub": "^0.1.2",
     "address": "^1.0.3",
@@ -33,18 +33,18 @@
     "cli-table3": "^0.5.1",
     "colors": "^1.3.0",
     "commander": "^2.15.1",
-    "configstore": "^3.1.2",
-    "debug": "^3.1.0",
+    "configstore": "^4.0.0",
+    "debug": "^4.1.1",
     "inquirer": "^6.0.0",
     "keypress": "^0.2.1",
     "ora": "^3.0.0",
     "please-upgrade-node": "^3.1.1",
     "qrcode-terminal": "^0.12.0",
-    "tuyapi": "^4.0.0",
+    "tuyapi": "^4.0.3",
     "update-notifier": "^2.5.0"
   },
   "devDependencies": {
-    "xo": "^0.21.1"
+    "xo": "^0.24.0"
   },
   "engines": {
     "node": ">=8"
