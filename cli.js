@@ -44,6 +44,7 @@ program
 	.option('--key [key]', 'key of device')
 	.option('--dps [dps]', 'property index to get', 1)
 	.option('-a, --all', 'get all properties of a device', false)
+	.option('--protocol-version [version]', 'tuya protocol version', parseFloat, 3.1)
 	.action(options => {
 		control.get(conf, options);
 	});
@@ -58,6 +59,7 @@ program
 	.option('--key [key]', 'key of device')
 	.option('--set <set>', 'value to set')
 	.option('--dps [dps]', 'DPS index to set', 1)
+	.option('--protocol-version [version]', 'tuya protocol version', parseFloat, 3.1)
 	.action(options => {
 		control.set(conf, options);
 	});
