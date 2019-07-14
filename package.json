@@ -29,7 +29,7 @@
     "@tuyapi/link": "^0.2.0",
     "@tuyapi/stub": "^0.1.2",
     "address": "^1.0.3",
-    "anyproxy": "^4.0.12",
+    "anyproxy": "^4.1.0",
     "cli-table3": "^0.5.1",
     "colors": "^1.3.0",
     "commander": "^2.15.1",
