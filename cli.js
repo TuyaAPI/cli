@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#! /usr/bin/env node
 
 // Imports
 const updateNotifier = require('update-notifier');
@@ -11,9 +11,6 @@ const listApp = require('./lib/list-app.js');
 const mock = require('./lib/mock.js');
 const control = require('./lib/control');
 const pkg = require('./package.json');
-
-// Check Node version
-require('please-upgrade-node')(pkg);
 
 // Set up config store
 const conf = new Configstore(pkg.name);
