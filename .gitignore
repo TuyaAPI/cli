@@ -1,3 +1,5 @@
+.http-mitm-proxy
+
 # Logs
 logs
 *.log
