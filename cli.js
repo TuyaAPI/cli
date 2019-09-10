@@ -73,7 +73,9 @@ program
 program
 	.command('list-app')
 	.description('list devices from Tuya Smart app (recommended for new users)')
+	.option('--ip <ip_addr>', 'IP address to bind the proxy and certificate server to')
 	.option('-p, --port [port]', 'port to use for proxy', 8001)
+	.option('--cert-port [port]', 'port to use for certificate download', 8002)
 	.option('-q, --omitQR', 'don\'t show the QR code for certificate setup', false)
 	.action(options => {
 		listApp(conf, options);
