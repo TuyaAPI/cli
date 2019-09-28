@@ -55,6 +55,7 @@ program
 	.option('--id <id>', 'id of device')
 	.option('--key [key]', 'key of device')
 	.option('--set <set>', 'value to set')
+	.option('--raw-value', 'pass the raw set value without attempting to parse it from a string')
 	.option('--dps [dps]', 'DPS index to set', 1)
 	.option('--protocol-version [version]', 'tuya protocol version', parseFloat, 3.1)
 	.action(options => {
