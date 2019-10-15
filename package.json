@@ -35,7 +35,7 @@
     "debug": "^4.1.1",
     "finalhandler": "^1.1.2",
     "http-mitm-proxy": "^0.8.1",
-    "inquirer": "^6.5.0",
+    "inquirer": "^7.0.0",
     "keypress": "^0.2.1",
     "ora": "^3.4.0",
     "qrcode-terminal": "^0.12.0",
