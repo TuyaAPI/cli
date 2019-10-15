@@ -37,7 +37,7 @@
     "http-mitm-proxy": "^0.8.1",
     "inquirer": "^6.5.0",
     "keypress": "^0.2.1",
-    "ora": "^3.4.0",
+    "ora": "^4.0.0",
     "qrcode-terminal": "^0.12.0",
     "serve-static": "^1.14.1",
     "tuyapi": "^5.1.1",
