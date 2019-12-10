@@ -78,6 +78,7 @@ program
 	.option('-p, --port [port]', 'port to use for proxy', 8001)
 	.option('--cert-port [port]', 'port to use for certificate download', 8002)
 	.option('-q, --omitQR', 'don\'t show the QR code for certificate setup', false)
+	.option('-o, --out [file]', 'export devices to a JSON file instead of printing them', '')
 	.action(options => {
 		listApp(conf, options);
 	});
