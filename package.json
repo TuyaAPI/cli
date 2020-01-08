@@ -44,7 +44,7 @@
     "update-notifier": "^4.0.0"
   },
   "devDependencies": {
-    "husky": "4.0.0",
+    "husky": "4.0.1",
     "xo": "0.25.3"
   },
   "engines": {
