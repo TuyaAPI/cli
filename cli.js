@@ -19,11 +19,12 @@ updateNotifier({pkg}).notify();
 // Link a device (old method)
 program
 	.command('link')
-	.description('link a new device (for advanced users only)')
+	.description('link a new device')
 	.option('--ssid <ssid>', 'name of WiFi to connect to')
 	.option('--password <password>', 'password of WiFi')
 	.option('--api-key [apiKey]', 'your tuya.com API key')
 	.option('--api-secret [apiSecret]', 'your tuya.com API secret')
+	.option('--schema <schema>', 'your tuya.com app identifier')
 	.option('--saveAPI', 'save your API pair so you can omit it for subsequent commands')
 	.option('-s, --save', 'save device parameters for subsequent commands')
 	.option('-n, --num [num]', 'number of devices to link', 1)
@@ -73,7 +74,7 @@ program
 // MITM Tuya App and list devices
 program
 	.command('list-app')
-	.description('list devices from Tuya Smart app (recommended for new users)')
+	.description('list devices from Tuya Smart app (deprecated)')
 	.option('--ip <ip_addr>', 'IP address to bind the proxy and certificate server to')
 	.option('-p, --port [port]', 'port to use for proxy', 8001)
 	.option('--cert-port [port]', 'port to use for certificate download', 8002)
