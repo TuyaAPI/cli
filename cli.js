@@ -25,6 +25,8 @@ program
 	.option('--api-key [apiKey]', 'your tuya.com API key')
 	.option('--api-secret [apiSecret]', 'your tuya.com API secret')
 	.option('--schema <schema>', 'your tuya.com app identifier')
+	.option('-t, --timezone [timezone]', 'your local timezone in tz format', 'America/Chicago')
+	.option('-r, --region [region]', 'the region closest to you from the following list: us=Americas, eu=Europe, cn=Asia', 'us')
 	.option('--saveAPI', 'save your API pair so you can omit it for subsequent commands')
 	.option('-s, --save', 'save device parameters for subsequent commands')
 	.option('-n, --num [num]', 'number of devices to link', 1)
