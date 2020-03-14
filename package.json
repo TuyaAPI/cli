@@ -30,7 +30,7 @@
     "@tuyapi/stub": "^0.1.4",
     "cli-table3": "^0.5.1",
     "colors": "^1.4.0",
-    "commander": "^4.1.1",
+    "commander": "^5.0.0",
     "configstore": "^5.0.1",
     "debug": "^4.1.1",
     "finalhandler": "^1.1.2",
