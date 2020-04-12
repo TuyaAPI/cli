@@ -26,7 +26,7 @@
   "homepage": "https://github.com/TuyaAPI/cli#readme",
   "dependencies": {
     "@tuyapi/link": "^0.3.2",
-    "@tuyapi/openapi": "^0.2.0",
+    "@tuyapi/openapi": "^1.0.0",
     "@tuyapi/stub": "^0.1.4",
     "cli-table3": "^0.5.1",
     "colors": "^1.4.0",
