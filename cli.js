@@ -6,6 +6,7 @@ const program = require('commander');
 const Configstore = require('configstore');
 
 // Import local files
+const cloud = require('./lib/cloud');
 const link = require('./lib/link');
 const listApp = require('./lib/list-app.js');
 const mock = require('./lib/mock.js');
@@ -15,6 +16,15 @@ const pkg = require('./package.json');
 // Set up config store
 const conf = new Configstore(pkg.name);
 updateNotifier({pkg}).notify();
+
+// Cloud methods
+program
+	.command('cloud list')
+	.option('--api-key [apiKey]', 'your tuya.com API key')
+	.option('--api-secret [apiSecret]', 'your tuya.com API secret')
+	.option('--schema <schema>', 'your tuya.com app identifier')
+	.option('-r, --region [region]', 'the region closest to you from the following list: us=Americas, eu=Europe, cn=Asia', 'us')
+	.action(cloud.list);
 
 // Link a device (old method)
 program
