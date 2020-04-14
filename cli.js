@@ -115,5 +115,8 @@ program
 		program.outputHelp();
 	});
 
+// Get version
+program.version(pkg.version);
+
 // Parse arguments
 program.parse(process.argv);
