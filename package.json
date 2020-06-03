@@ -45,7 +45,7 @@
   },
   "devDependencies": {
     "husky": "4.2.3",
-    "xo": "0.26.1"
+    "xo": "0.32.0"
   },
   "engines": {
     "node": ">=8"
