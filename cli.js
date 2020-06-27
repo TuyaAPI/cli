@@ -11,6 +11,7 @@ const link = require('./lib/link');
 const listApp = require('./lib/list-app.js');
 const mock = require('./lib/mock.js');
 const control = require('./lib/control');
+const wizard = require('./lib/wizard');
 const pkg = require('./package.json');
 
 // Set up config store
@@ -106,6 +107,11 @@ program
 	.action(options => {
 		mock(conf, options);
 	});
+
+program
+	.command('wizard')
+	.description('list devices from an offical app')
+	.action(options => wizard(conf, options));
 
 // Get help
 program
