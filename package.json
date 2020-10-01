@@ -41,7 +41,7 @@
     "promise.any": "^2.0.1",
     "qrcode-terminal": "^0.12.0",
     "serve-static": "^1.14.1",
-    "tuyapi": "^5.3.1",
+    "tuyapi": "^6.0.0",
     "update-notifier": "^4.1.0"
   },
   "devDependencies": {
