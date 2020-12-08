@@ -1,6 +1,6 @@
 {
   "name": "@tuyapi/cli",
-  "version": "1.13.5",
+  "version": "1.13.6",
   "description": "🔧 A CLI for Tuya devices",
   "main": "cli.js",
   "scripts": {
