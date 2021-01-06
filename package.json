@@ -27,7 +27,7 @@
   "dependencies": {
     "@tuyapi/link": "^0.3.3",
     "@tuyapi/openapi": "^1.2.0",
-    "@tuyapi/stub": "^0.1.4",
+    "@tuyapi/stub": "^0.2.0",
     "cli-table3": "^0.6.0",
     "colors": "^1.4.0",
     "commander": "^5.1.0",
