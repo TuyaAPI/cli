@@ -102,6 +102,7 @@ program
 	.description('mock a Tuya device for local testing')
 	.option('-i, --id [id]', 'ID to use for mock device')
 	.option('-k, --key [key]', 'key to use for mock device')
+	.option('-a, --ip [key]', 'IP/host name to use for mock device')
 	.option('-s, --state [state]', 'inital state to use for device', JSON.stringify({1: true, 2: false}))
 	.option('-u, --disableUDP', 'disable the UDP broadcast')
 	.action(options => {
