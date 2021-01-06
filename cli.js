@@ -25,6 +25,7 @@ program
 	.option('--api-secret [apiSecret]', 'your tuya.com API secret')
 	.option('--schema <schema>', 'your tuya.com app identifier')
 	.option('-r, --region [region]', 'the region closest to you from the following list: us=Americas, eu=Europe, cn=Asia', 'us')
+	.option('-s, --stringify', 'stringify JSON before printing', false)
 	.action(cloud.list);
 
 // Link a device (old method)
@@ -112,6 +113,7 @@ program
 program
 	.command('wizard')
 	.description('list devices from an offical app')
+	.option('-s, --stringify', 'stringify JSON before printing', false)
 	.action(options => wizard(conf, options));
 
 // Get help
