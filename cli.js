@@ -116,7 +116,6 @@ program
 	.command('wizard')
 	.description('list devices from an offical app')
 	.option('-s, --stringify', 'stringify JSON before printing', false)
-	.option('--zigbee', 'get subdevices of zigbee gateway', false)
 	.action(options => wizard(conf, options));
 
 // Get help
