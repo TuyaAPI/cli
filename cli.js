@@ -54,10 +54,10 @@ program
 	.option('--ip <ip_addr>', 'ip address of device')
 	.option('--id <id>', 'id of device')
 	.option('--key [key]', 'key of device')
-	.option('--cid [cid_zigbee_device]', 'if specified, treat device as a zigbee gateway and get status of zigbee device with their cid', false)
-	.option('--dps [dps]', 'property index to get', 1)
-	.option('-a, --all', 'get all properties of a device', false)
-	.option('--protocol-version [version]', 'tuya protocol version', parseFloat, 3.1)
+	.option('--cid [cid_zigbee_device]', 'if specified, use device id of zigbee gateway and cid of subdevice to get its status', false)
+	.option('--dps [dps]', 'property index to get')
+	.option('--full', 'get full response payload', false)
+	.option('--protocol-version [version]', 'tuya protocol version', parseFloat, 3.3)
 	.action(options => {
 		control.get(conf, options);
 	});
@@ -70,11 +70,11 @@ program
 	.option('--ip <ip_addr>', 'ip address of device')
 	.option('--id <id>', 'id of device')
 	.option('--key [key]', 'key of device')
-	.option('--cid [cid_zigbee_device]', 'if specified, treat device as a zigbee gateway and set value of zigbee device dps with their cid', false)
+	.option('--cid [cid_zigbee_device]', 'if specified, use device id of zigbee gateway and cid of subdevice to set its property', false)
 	.option('--set <set>', 'value to set')
 	.option('--raw-value', 'pass the raw set value without attempting to parse it from a string')
 	.option('--dps [dps]', 'DPS index to set', 1)
-	.option('--protocol-version [version]', 'tuya protocol version', parseFloat, 3.1)
+	.option('--protocol-version [version]', 'tuya protocol version', parseFloat, 3.3)
 	.action(options => {
 		control.set(conf, options);
 	});
