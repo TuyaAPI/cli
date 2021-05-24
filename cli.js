@@ -8,8 +8,8 @@ const Configstore = require('configstore');
 // Import local files
 const cloud = require('./lib/cloud');
 const link = require('./lib/link');
-const listApp = require('./lib/list-app.js');
-const mock = require('./lib/mock.js');
+const listApp = require('./lib/list-app');
+const mock = require('./lib/mock');
 const control = require('./lib/control');
 const wizard = require('./lib/wizard');
 const pkg = require('./package.json');
