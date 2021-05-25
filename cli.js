@@ -57,7 +57,7 @@ program
 	.option('--cid [cid_zigbee_device]', 'if specified, use device id of zigbee gateway and cid of subdevice to get its status')
 	.option('--dps [dps]', 'property index to get')
 	.option('--full', 'get full response payload', false)
-	.option('--protocol-version [version]', 'tuya protocol version', parseFloat, 3.3)
+	.option('--protocol-version [version]', 'tuya protocol version', parseFloat, 3.1)
 	.action(options => {
 		control.get(conf, options);
 	});
@@ -74,7 +74,7 @@ program
 	.option('--set <set>', 'value to set')
 	.option('--raw-value', 'pass the raw set value without attempting to parse it from a string')
 	.option('--dps [dps]', 'DPS index to set', 1)
-	.option('--protocol-version [version]', 'tuya protocol version', parseFloat, 3.3)
+	.option('--protocol-version [version]', 'tuya protocol version', parseFloat, 3.1)
 	.action(options => {
 		control.set(conf, options);
 	});
