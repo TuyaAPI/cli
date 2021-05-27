@@ -26,7 +26,7 @@
   "homepage": "https://github.com/TuyaAPI/cli#readme",
   "dependencies": {
     "@tuyapi/link": "^0.3.3",
-    "@tuyapi/openapi": "^1.2.0",
+    "@tuyapi/openapi": "^1.3.0",
     "@tuyapi/stub": "^0.2.0",
     "cli-table3": "^0.6.0",
     "colors": "^1.4.0",
@@ -42,7 +42,7 @@
     "promise.any": "^2.0.2",
     "qrcode-terminal": "^0.12.0",
     "serve-static": "^1.14.1",
-    "tuyapi": "^6.0.0",
+    "tuyapi": "^7.1.1",
     "update-notifier": "^4.1.0"
   },
   "devDependencies": {
