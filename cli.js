@@ -8,8 +8,8 @@ const Configstore = require('configstore');
 // Import local files
 const cloud = require('./lib/cloud');
 const link = require('./lib/link');
-const listApp = require('./lib/list-app.js');
-const mock = require('./lib/mock.js');
+const listApp = require('./lib/list-app');
+const mock = require('./lib/mock');
 const control = require('./lib/control');
 const wizard = require('./lib/wizard');
 const pkg = require('./package.json');
@@ -54,8 +54,9 @@ program
 	.option('--ip <ip_addr>', 'ip address of device')
 	.option('--id <id>', 'id of device')
 	.option('--key [key]', 'key of device')
-	.option('--dps [dps]', 'property index to get', 1)
-	.option('-a, --all', 'get all properties of a device', false)
+	.option('--cid [cid_zigbee_device]', 'if specified, use device id of zigbee gateway and cid of subdevice to get its status')
+	.option('--dps [dps]', 'property index to get')
+	.option('--full', 'get full response payload', false)
 	.option('--protocol-version [version]', 'tuya protocol version', parseFloat, 3.1)
 	.action(options => {
 		control.get(conf, options);
@@ -69,6 +70,7 @@ program
 	.option('--ip <ip_addr>', 'ip address of device')
 	.option('--id <id>', 'id of device')
 	.option('--key [key]', 'key of device')
+	.option('--cid [cid_zigbee_device]', 'if specified, use device id of zigbee gateway and cid of subdevice to set its property')
 	.option('--set <set>', 'value to set')
 	.option('--raw-value', 'pass the raw set value without attempting to parse it from a string')
 	.option('--dps [dps]', 'DPS index to set', 1)
