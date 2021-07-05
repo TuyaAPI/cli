@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/TuyaAPI/cli#readme",
   "dependencies": {
+    "@tuya/tuya-connector-nodejs": "^2.0.2",
     "@tuyapi/link": "^0.3.3",
     "@tuyapi/openapi": "^1.3.0",
     "@tuyapi/stub": "^0.2.0",
@@ -55,6 +56,11 @@
   "husky": {
     "hooks": {
       "pre-commit": "npm test"
+    }
+  },
+  "xo": {
+    "rules": {
+      "camelcase": "off"
     }
   }
 }
