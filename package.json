@@ -37,7 +37,7 @@
     "es-aggregate-error": "^1.0.3",
     "finalhandler": "^1.1.2",
     "http-mitm-proxy": "^0.8.2",
-    "inquirer": "^7.2.0",
+    "inquirer": "^8.0.0",
     "keypress": "^0.2.1",
     "ora": "^4.0.4",
     "promise.any": "^2.0.2",
