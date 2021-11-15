@@ -34,6 +34,7 @@ program
 	.description('link a new device')
 	.option('--ssid <ssid>', 'name of WiFi to connect to')
 	.option('--password <password>', 'password of WiFi')
+	.option('--bind-addr <ip>', 'ip of wireless interface to broadcast on')
 	.option('--api-key [apiKey]', 'your tuya.com API key')
 	.option('--api-secret [apiSecret]', 'your tuya.com API secret')
 	.option('--schema <schema>', 'your tuya.com app identifier')
