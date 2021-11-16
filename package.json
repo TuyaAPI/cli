@@ -26,7 +26,7 @@
   "homepage": "https://github.com/TuyaAPI/cli#readme",
   "dependencies": {
     "@tuya/tuya-connector-nodejs": "^2.0.2",
-    "@tuyapi/link": "^0.3.4",
+    "@tuyapi/link": "^0.4.0",
     "@tuyapi/openapi": "^1.3.0",
     "@tuyapi/stub": "^0.2.0",
     "cli-table3": "^0.6.0",
