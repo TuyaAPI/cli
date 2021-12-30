@@ -61,3 +61,6 @@ typings/
 
 # next.js build output
 .next
+
+# Visual Studio Code settings, like the launch.json used for debugging
+.vscode
