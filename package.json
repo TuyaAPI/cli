@@ -27,7 +27,7 @@
   "dependencies": {
     "@tuya/tuya-connector-nodejs": "^2.0.2",
     "@tuyapi/link": "^0.5.0",
-    "@tuyapi/stub": "^0.2.0",
+    "@tuyapi/stub": "^0.3.0",
     "cli-table3": "^0.6.0",
     "colors": "1.4.0",
     "commander": "^5.1.0",
